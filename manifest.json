@@ -1,0 +1,25 @@
+{
+	"name": "YouTube Search",
+	"description": "Add YouTube to your search engine",
+	"version": "0.1",
+	"manifest_version": 2,
+	"applications": {
+		"gecko": {
+			"id": "youtube@search",
+			"strict_min_version": "64.0"
+		}
+	},
+	"icons": {
+		"16": "favicon.png"
+	},
+	"web_accessible_resources": [
+		"favicon.png"
+	],
+	"chrome_settings_overrides": {
+		"search_provider": {
+			"name": "YouTube",
+			"keyword": "@ytb",
+			"search_url": "https://www.youtube.com/results?search_query={searchTerms}"
+		}
+	}
+}
